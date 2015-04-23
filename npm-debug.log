@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './' ]
+2 info using npm@2.7.5
+3 info using node@v0.12.2
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ './' ]
+6 silly cache add args [ './', null ]
+7 verbose cache add spec ./
+8 silly cache add parsed spec { raw: './',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: './',
+8 silly cache add   spec: '/Users/lukescott/Desktop/babel-plugin-class-name',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/lukescott/.npm/babel-plugin-class-name/1.0.0/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/lukescott/.npm/babel-plugin-class-name/1.0.0/package.tgz',
+10 verbose tar pack   '/Users/lukescott/Desktop/babel-plugin-class-name' ]
+11 verbose tarball /Users/lukescott/.npm/babel-plugin-class-name/1.0.0/package.tgz
+12 verbose folder /Users/lukescott/Desktop/babel-plugin-class-name
+13 info prepublish babel-plugin-class-name@1.0.0
+14 verbose addLocalTarball adding from inside cache /Users/lukescott/.npm/babel-plugin-class-name/1.0.0/package.tgz
+15 silly cache afterAdd babel-plugin-class-name@1.0.0
+16 verbose afterAdd /Users/lukescott/.npm/babel-plugin-class-name/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/lukescott/.npm/babel-plugin-class-name/1.0.0/package/package.json written
+18 silly publish { name: 'babel-plugin-class-name',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'Babel plugin that adds a static property at build time containing class name',
+18 silly publish   main: 'index.js',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'https://github.com/webconnex/babel-plugin-class-name' },
+18 silly publish   bugs: { url: 'https://github.com/webconnex/babel-plugin-class-name/issues' },
+18 silly publish   homepage: 'https://github.com/webconnex/babel-plugin-class-name',
+18 silly publish   readme: '# babel-plugin-class-name\nBabel plugin that adds a static property at build time containing class name.\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '193abd09bd925824440ed252628774c7b1813a64',
+18 silly publish   _id: 'babel-plugin-class-name@1.0.0',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: '9f02a4de307294cf5c40a8498ea3b5a23e57cd95',
+18 silly publish   _from: '.' }
+19 silly mapToRegistry name babel-plugin-class-name
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/babel-plugin-class-name
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/lukescott/.npm/babel-plugin-class-name/1.0.0/package.tgz
+25 verbose request uri https://registry.npmjs.org/babel-plugin-class-name
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 18:07:44
+28 verbose request using bearer token for auth
+29 verbose request id dfece2f547203e41
+30 http request PUT https://registry.npmjs.org/babel-plugin-class-name
+31 http 403 https://registry.npmjs.org/babel-plugin-class-name
+32 verbose headers { date: 'Thu, 23 Apr 2015 01:07:44 GMT',
+32 verbose headers   server: 'Apache',
+32 verbose headers   'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '128',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   'x-served-by': 'cache-lax1420-LAX',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1429751264.473971,VS0,VE270',
+32 verbose headers   'keep-alive': 'timeout=10, max=50',
+32 verbose headers   connection: 'Keep-Alive' }
+33 verbose request invalidating /Users/lukescott/.npm/registry.npmjs.org/babel-plugin-class-name on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0" : babel-plugin-class-name
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:360:22)
+35 verbose stack     at Request.emit (events.js:110:17)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1202:14)
+35 verbose stack     at Request.emit (events.js:129:20)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1150:12)
+35 verbose stack     at IncomingMessage.emit (events.js:129:20)
+35 verbose stack     at _stream_readable.js:908:16
+35 verbose stack     at process._tickCallback (node.js:355:11)
+36 verbose statusCode 403
+37 verbose pkgid babel-plugin-class-name
+38 verbose cwd /Users/lukescott/Desktop/babel-plugin-class-name
+39 error Darwin 14.3.0
+40 error argv "node" "/usr/local/bin/npm" "publish" "./"
+41 error node v0.12.2
+42 error npm  v2.7.5
+43 error code E403
+44 error "You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0" : babel-plugin-class-name
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
