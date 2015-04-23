@@ -1,0 +1,14 @@
+{
+  "name": "babel-plugin-class-name",
+  "version": "1.0.0",
+  "description": "Babel plugin that adds a static property at build time containing class name",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webconnex/babel-plugin-class-name"
+  },
+  "bugs": {
+    "url": "https://github.com/webconnex/babel-plugin-class-name/issues"
+  },
+  "homepage": "https://github.com/webconnex/babel-plugin-class-name"
+}
