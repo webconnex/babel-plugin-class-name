@@ -4,7 +4,7 @@ function addClassName(node) {
 	node.body.body.unshift({
 		type: "ClassProperty",
 		key: {
-			name: "_className",
+			name: "className",
 			type: "Identifier"
 		},
 		value: {
@@ -16,7 +16,7 @@ function addClassName(node) {
 	});
 }
 
-module.exports = new Transformer("addClassName", {
+module.exports = new Transformer("class-name", {
 	ClassDeclaration: addClassName,
 	ClassExpression: addClassName
 });
