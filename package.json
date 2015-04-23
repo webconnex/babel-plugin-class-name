@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-class-name",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Babel plugin that adds a static property at build time containing class name",
   "main": "index.js",
   "repository": {
