@@ -10,5 +10,8 @@
   "bugs": {
     "url": "https://github.com/webconnex/babel-plugin-class-name/issues"
   },
-  "homepage": "https://github.com/webconnex/babel-plugin-class-name"
+  "homepage": "https://github.com/webconnex/babel-plugin-class-name",
+  "dependencies": {
+    "babel-core": "^5.7.4"
+  }
 }
